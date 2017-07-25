@@ -33,7 +33,8 @@ int main(int argc, const char * argv[]) {
         iOSCohort.test1TotalScore = 300;
         iOSCohort.test1NumberOfStudents = 3;
         
-        
+        NSLog(@"For class %@ average score for test1 is %f", iOSCohort.name, [iOSCohort avergeScoreForTest1]);
+
         
 //        float averageScoreForTest1 = ;
         
