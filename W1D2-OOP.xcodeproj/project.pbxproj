@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12CEDDDE1EDDBAD8007CA26B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CEDDDD1EDDBAD8007CA26B /* main.m */; };
-		12CEDDE61EDDD358007CA26B /* Room.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CEDDE51EDDD358007CA26B /* Room.m */; };
+		12F0233B1F27A89300CECA55 /* Cohort.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F0233A1F27A89300CECA55 /* Cohort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		12CEDDDA1EDDBAD8007CA26B /* W1D2-OOP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "W1D2-OOP"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12CEDDDD1EDDBAD8007CA26B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		12CEDDE41EDDD358007CA26B /* Room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Room.h; sourceTree = "<group>"; };
-		12CEDDE51EDDD358007CA26B /* Room.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Room.m; sourceTree = "<group>"; };
+		12F023391F27A89300CECA55 /* Cohort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cohort.h; sourceTree = "<group>"; };
+		12F0233A1F27A89300CECA55 /* Cohort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cohort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				12CEDDDD1EDDBAD8007CA26B /* main.m */,
-				12CEDDE41EDDD358007CA26B /* Room.h */,
-				12CEDDE51EDDD358007CA26B /* Room.m */,
+				12F023391F27A89300CECA55 /* Cohort.h */,
+				12F0233A1F27A89300CECA55 /* Cohort.m */,
 			);
 			path = "W1D2-OOP";
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12CEDDE61EDDD358007CA26B /* Room.m in Sources */,
+				12F0233B1F27A89300CECA55 /* Cohort.m in Sources */,
 				12CEDDDE1EDDBAD8007CA26B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +257,7 @@
 				12CEDDE31EDDBAD8007CA26B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

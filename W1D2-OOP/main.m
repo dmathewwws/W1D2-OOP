@@ -7,55 +7,47 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Room.h"
-
+#import "Cohort.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         
-        Room *room1 = [[Room alloc] initWithWidth:10 andDepth:12];
-        
-        float roomValue = [room1 volume];
-        
-        NSLog(@"Room Volume is %f", roomValue);
-        
-        Room *room2 = [[Room alloc] init];
-        room2.width = 10;
-        room2.depth = 10;
-        room2.height = 10;
-        
-        [room2 volume];
-        
-        BOOL isRoom1Bigger = [room1 isCurrentRoomBiggerThan:room2];
-        NSLog(isRoom1Bigger ? @"room 1 bigger" : @"room 2 bigger");
-        
-        
-        NSNumber *number = [NSNumber numberWithFloat:3.14];
+//        NSString *nameForIOSClass = @"iOS";
+//        int test1totalScoreForIOSClass = 200;
+//        int test1tNumberOfStudentsForIOSClass = 3;
+//        float test1avgForIOSClass = test1totalScoreForIOSClass / test1tNumberOfStudentsForIOSClass;
+//        
+//        NSLog(@"For class %@ average score for test1 is %f", nameForIOSClass, test1avgForIOSClass);
+//        
+//        NSString *nameForWebClass = @"Web";
+//        int test1totalScoreForWebClass = 200;
+//        int test1tNumberOfStudentsForWebClass = 3;
+//        float test1avgForWebClass = (float)test1totalScoreForWebClass / (float)test1tNumberOfStudentsForWebClass;
+//        
+//        NSLog(@"For class %@ average score for test1 is %f", nameForWebClass, test1avgForWebClass);
 
-        NSArray *arrayOfRooms = @[room1, room2];
-        NSMutableArray *altArrayOfRooms = [[NSMutableArray alloc] initWithObjects:room1, room2, nil];
+        Cohort  *iOSCohort = [[Cohort alloc] init];
+        iOSCohort.name = @"iOS";
         
-        Room *aRoom = arrayOfRooms[1];
-        Room *aRoom2 = [arrayOfRooms objectAtIndex:1];
+        iOSCohort.test1TotalScore = 300;
+        iOSCohort.test1NumberOfStudents = 3;
         
-        NSArray *thirdArray = [arrayOfRooms arrayByAddingObject:room2];
-
-        for (int i = 0; i < arrayOfRooms.count ; i++ ){
-            
-            Room *aRoom = arrayOfRooms[i];
-
-        }
         
-        for (Room *aRoom in arrayOfRooms){
-            
-            
-        }
-
+        
+//        float averageScoreForTest1 = ;
+        
+        NSLog(@"For class %@ average score for test1 is %f", [iOSCohort name], [iOSCohort avergeScoreForTest1]);
+        
+        Cohort  *webCohort = [[Cohort alloc] initWithName:@"Web"];
+        webCohort.test1TotalScore = 200;
+        webCohort.test1NumberOfStudents = 3;
+        //        float averageScoreForTest1 = ;
+        
+        NSLog(@"For class %@ average score for test1 is %f", webCohort.name, [webCohort avergeScoreForTest1]);
         
         
 
-        
         
     }
     return 0;
