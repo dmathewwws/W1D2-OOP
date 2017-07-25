@@ -47,6 +47,23 @@ int main(int argc, const char * argv[]) {
         NSLog(@"For class %@ average score for test1 is %f", webCohort.name, [webCohort avergeScoreForTest1]);
         
         
+        NSArray *testScores = [NSArray arrayWithObjects:@6, @10, nil];
+        
+//        NSArray *newTestScore = [testScore arrayByAddingObject:@6];
+//        
+//        NSArray *testScore2 = @[@6, @10];
+//        
+//        NSMutableArray *mutableArray = @[];
+//        [mutableArray addObject:@5];
+        
+        
+        for (NSNumber *testScore in testScores) {
+            NSLog(@"testScore is %@", testScore);
+        }
+        
+        for (int i = 0; i<testScores.count ; i++) {
+            NSLog(@"testScore is %@ at index %d", testScores[i], i);
+        }
 
         
     }
